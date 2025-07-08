@@ -195,7 +195,7 @@ else:
         st.markdown("### 🌐 Share Entry (Read-Only)")
         entry_date = st.date_input("🗓 Share Date", value=date.today())
         entry_date_str = entry_date.strftime("%Y-%m-%d")
-        base_url = "http://localhost:8501"  # Replace with your hosted URL
+        base_url = "https://your-deployed-url.streamlit.app"  # Replace with your hosted URL
 
         if get_entry_by_date(user["id"], entry_date_str):
             if st.button("🔗 Generate Share Link"):
@@ -213,3 +213,6 @@ else:
     elif menu == "🔍 Search":
         st.markdown("### 🔍 Search Diary")
         search_entries(user["id"])
+
+st.markdown("<div style='text-align:center; color:#666; margin-top: 30px;'>© 2025 | Published by Aju Krishna</div>", unsafe_allow_html=True)
+st.markdown("</div>", unsafe_allow_html=True)
