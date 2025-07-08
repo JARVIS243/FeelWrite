@@ -1,0 +1,5 @@
+streamlit
+bcrypt
+pandas
+python-docx       # for exporting diary entries as .txt/.docx
+reportlab         # for exporting entries as .pdf
