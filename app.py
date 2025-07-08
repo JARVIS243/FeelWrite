@@ -195,7 +195,7 @@ else:
         st.markdown("### 🌐 Share Entry (Read-Only)")
         entry_date = st.date_input("🗓 Share Date", value=date.today())
         entry_date_str = entry_date.strftime("%Y-%m-%d")
-        base_url = "https://https://feelwrite.streamlit.app/"  # Replace with your hosted URL
+        base_url = "https://https://feelwrite.streamlit.app"  # Replace with your hosted URL
 
         if get_entry_by_date(user["id"], entry_date_str):
             if st.button("🔗 Generate Share Link"):
